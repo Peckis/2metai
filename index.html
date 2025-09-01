@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>SU DVEJAIS METAIS!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body, html {
       margin: 0;
@@ -23,25 +24,27 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-size: 2em;
       z-index: 10;
+      text-align: center;
+      padding: 20px;
     }
     #hacker-text {
       font-family: monospace;
       white-space: pre;
-      font-size: 1.8em;
-      text-align: center;
+      font-size: clamp(1.5em, 6vw, 2.5em);
+      line-height: 1.4;
     }
     #password-input {
       margin-top: 20px;
-      font-size: 1em;
-      padding: 5px 10px;
+      font-size: clamp(1em, 4vw, 1.5em);
+      padding: 10px 15px;
       border: none;
       border-bottom: 2px solid white;
       background: transparent;
       color: white;
       outline: none;
       text-align: center;
+      width: clamp(200px, 60%, 300px);
     }
 
     /* Main content */
@@ -58,17 +61,18 @@
       text-align: center;
       overflow: hidden;
       position: relative;
+      padding: 10px;
     }
     h1 {
       font-size: clamp(2em, 6vw, 3em);
       margin: 0;
     }
     p {
-      font-size: clamp(1em, 3vw, 1.2em);
+      font-size: clamp(1em, 4vw, 1.3em);
       margin: 5px 0 20px 0;
     }
     svg {
-      width: 90%;
+      width: 95%;
       max-width: 400px;
       height: auto;
     }
